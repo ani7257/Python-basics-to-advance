@@ -162,14 +162,6 @@ print(generate_frequency())
 print(sort_marks())'''
 
 #Practise7
-'''glossary={"merry":"god","christmas":"jul","and":"och","happy":"gott","new":"nytt","year":"ar"}
-def translate(dictionary, words):
-    return[dictionary.get(word, word) for word in words]
-english_wish=["merry","christmas","and","happy","new","year"]
-swedish_wish=["god","jul","och","gott","nytt","ar"]
-print(swedish_wish)'''
-
-            #OR
 '''def translate(dict1,list1):
     list2=[]
     for i in list1:
@@ -191,7 +183,7 @@ for i in l1:
     if sum(i)%2!=0:
         c+=1
 print(c)
-'''result=[]
+result=[]
 for i in range(n1,n2+1):
     result.append(i)
 print(result)
@@ -206,7 +198,7 @@ for i in range(len(array)):
 print(result)
 result=[array[i:j+1] for i in range(len(array))
         for j in range(i,len(array))]
-print(result)'''
+print(result)
 
 
 
