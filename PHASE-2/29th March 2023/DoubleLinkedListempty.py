@@ -55,7 +55,45 @@ class DoublyLinkedList:
                 new_node.previous=temp
                 temp.next.previous=new_node
                 temp.next=new_node
-
+    def deletefromlast(self):
+        if self.isEmpty():
+            print("The linked list is empty. Cannot delete elements")
+        elif self.head.next is None:
+            self.head=None
+        else:
+            temp=self.head
+            while temp.next is not None:
+                temp=temp.next
+            temp.previous.next=None
+            temp.previous=None
+    def deletefrombeginning(self):
+        if self.isEmpty():
+            print("The linked list is empty. Cannot delete elements")
+        elif self.head.next is None:
+            self.head=None
+        else:
+            self.head=self.head.next
+            self.head.previous=None
+    def deletefromposition(self,position):
+        if self.isEmpty():
+            print("The linked list is empty. Cannot delete elements")
+        elif position==1:
+            self.deletefrombeginning()
+        else:
+            temp=self.head
+            c=1
+            while temp is not None:
+                if c==position:
+                    break
+                temp=temp.next
+                c+=1
+            if temp is None:
+                print("The linked list is empty. Cannot delete elements")
+            elif temp.next is None:
+                self.deletefromlast()
+            temp.previous.next=temp.next
+            temp.next.previous=temp.previous
+            temp.previous=None
    
     def printlist(self):
         temp=self.head
@@ -77,3 +115,14 @@ print("No of nodes",x.length())
 print("Insert at position 2 number 8")
 x.insertatposition(8,2)
 x.printlist()
+print("After Deleting from last")
+x.deletefromlast()
+x.printlist()
+print("After Deleting from beginning")
+x.deletefrombeginning()
+x.printlist()
+print("Insert at position 2 number 8")
+x.deletefromposition(3)
+x.printlist()
+
+    
