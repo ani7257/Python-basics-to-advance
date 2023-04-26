@@ -1,0 +1,98 @@
+1.What will the output of the following pseudocode for a=3, b=8?
+
+Integer funn(Integer a, Integer b)
+	  if(b mod a<2)
+		   b = b>>1
+		   return a
+	  End if
+	  if(a mod b<2)
+	         b = b+12
+			 return b
+	  end if
+	  return a+b+5
+End function funn()
+
+OUTPUT-16
+
+2.What will be the value of the following pseudocode?
+
+Integer j, m
+Set m=1, j=1
+Integer a[3] ={0,1,4}
+if (a[m -1] || (a[-1] && a[1]))
+a[j]=5
+End if
+m=m+a[j]
+Print m
+
+OUTPUT-6
+
+3.What will be the value of the following pseudocode for x=27?
+
+Integer fun(Integer x)
+	if(x > 9)
+		fun(x/9)
+		print x - 1
+		fun(x/3)
+	else
+		print x-2
+	end if
+end function fun()
+
+OUTPUT- 1 26 7
+
+4.What will be the value of the following pseudocode?
+Input f=6, g=9 and set sum = 0
+Integer n
+if (g > f)
+		for (n = f; n<g; n=n+1)
+				sum = sum + n
+		End for loop
+else
+		Print Error Message
+Print sum
+
+OUTPUT-21
+
+5.What will be the value of the following pseudocode?
+
+Integer j,m 
+Set m = 1, j=1
+Integer a[3] = {0, 1, 0}
+a[0] = a[0] + a[1]
+a[1] = a[1] + a[2]
+a[2] = a[2] + a[0]
+if(a[0])
+		a[j] = 5
+End if
+m = a[j]+1
+print m
+
+OUTPUT- 6
+
+6.What will be the value of the following pseudocode for n = 39 and r = 13?
+
+Integer f1(Integer n, Integer r)
+	if(n > 0)
+		return (n - r + f1(n/3, 13))
+	else
+		return 0
+	end if
+End function f1()
+
+OUTPUT- 5
+
+7.What will be the value of the following pseudocode?
+Integer p,q,r
+Set q = 13
+for (each p from 1 to 4)
+		r = q mod p
+		p = p + 5
+		q = p + r
+end for
+r = q/5
+Print q,r 
+
+OUTPUT- 6 1
+
+
